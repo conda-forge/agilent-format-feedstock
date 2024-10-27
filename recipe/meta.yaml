@@ -1,13 +1,13 @@
 {% set name = "agilent-format" %}
-{% set version = "0.4.5" %}
+{% set version = "0.4.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/agilent-format-{{ version }}.tar.gz
-  sha256: 8cd931128a2a4eadfde57c7323b2df25e10d63bcd1f09e478fc8d0d103c64df1
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 8c0927309d8952d20741bb27adf49fb96007c720cfdca84a35b423d87090c4e4
 
 build:
   noarch: python
